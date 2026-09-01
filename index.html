@@ -9,19 +9,19 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f9f9f9;
-            color: #183C63;
+            background-color: #000000; /* fundo preto */
+            color: #ff0000; /* texto vermelho */
             transition: background-color 0.3s, color 0.3s;
         }
 
         body.tema-escuro {
             background-color: #121212;
-            color: #f9f9f9;
+            color: #ff4444;
         }
 
         header, footer {
-            background-color: #183C63;
-            color: #FFFFFF;
+            background-color: #ff0000; /* cabeçalho e rodapé vermelhos */
+            color: #000000; /* texto preto */
             text-align: center;
             padding: 15px;
         }
@@ -30,14 +30,14 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #FFFFFF;
-            color: #183C63;
+            background-color: #1a1a1a; /* fundo cinza escuro */
+            color: #ff0000;
             border-radius: 8px;
         }
 
         body.tema-escuro main {
-            background-color: #1e1e1e;
-            color: #f9f9f9;
+            background-color: #000000;
+            color: #ff4444;
         }
 
         section {
@@ -49,33 +49,35 @@
             height: auto;
             margin: 10px 0;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255,0,0,0.5); /* sombra vermelha */
         }
 
-        /* Estilo diferenciado para títulos */
         h2 {
             font-family: 'Trebuchet MS', sans-serif;
             font-size: 26px;
-            color: #183C63;
-            border-left: 6px solid #183C63;
+            border-left: 6px solid #ff0000;
             padding-left: 10px;
             margin-bottom: 10px;
-            background: linear-gradient(to right, #e6f0ff, transparent);
+            background: linear-gradient(to right, #330000, transparent);
+            color: #ff0000;
         }
 
         body.tema-escuro h2 {
-            color: #f9f9f9;
-            border-left: 6px solid #FFD700;
-            background: linear-gradient(to right, #333, transparent);
+            border-left: 6px solid #ff4444;
+            background: linear-gradient(to right, #222, transparent);
+            color: #ff4444;
         }
 
         .quiz {
-            background: #eef;
+            background: #330000;
             padding: 20px;
             border-radius: 8px;
+            color: #ff0000;
         }
 
         body.tema-escuro .quiz {
-            background: #333;
+            background: #111;
+            color: #ff4444;
         }
     </style>
 </head>
@@ -101,7 +103,7 @@
             <h2>📱 Uso Excessivo de Telas</h2>
             <p><strong>Dilema:</strong> Excesso de tempo em frente ao celular e computador.</p>
             <p><strong>Solução:</strong> Definir limites de uso e pausas regulares.</p>
-            <img src="20190226084527.jpg" alt="Uso de telas">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Smartphone_icon.png" alt="Uso de telas">
         </section>
 
         <section>
