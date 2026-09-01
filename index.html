@@ -45,9 +45,10 @@
         }
 
         img {
-            width: 120px;
-            height: 120px;
+            width: 200px;
+            height: auto;
             margin: 10px 0;
+            border-radius: 8px;
         }
 
         .quiz {
@@ -109,7 +110,7 @@
     </footer>
 
     <script>
-        // Botão de curtidas
+        // Botões de curtida
         const botoes = document.querySelectorAll("button:not(#temaBtn)");
         botoes.forEach(function (botao) {
             botao.addEventListener("click", function () {
