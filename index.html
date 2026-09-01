@@ -10,6 +10,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f9f9f9;
+            color: #183C63;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.tema-escuro {
+            background-color: #121212;
+            color: #f9f9f9;
         }
 
         header, footer {
@@ -28,6 +35,11 @@
             border-radius: 8px;
         }
 
+        body.tema-escuro main {
+            background-color: #1e1e1e;
+            color: #f9f9f9;
+        }
+
         section {
             margin-bottom: 30px;
         }
@@ -44,8 +56,8 @@
             border-radius: 8px;
         }
 
-        .quiz h3 {
-            margin-top: 0;
+        body.tema-escuro .quiz {
+            background: #333;
         }
     </style>
 </head>
@@ -54,6 +66,7 @@
     <header>
         <h1>Dilemas Digitais</h1>
         <p>Reflexões e soluções para o mundo conectado</p>
+        <button id="temaBtn">Alternar Tema 🌗</button>
         <button>❤️<span>0</span></button>
         <button>👍<span>0</span></button>
     </header>
@@ -96,12 +109,19 @@
     </footer>
 
     <script>
-        const botoes = document.querySelectorAll("button");
+        // Botão de curtidas
+        const botoes = document.querySelectorAll("button:not(#temaBtn)");
         botoes.forEach(function (botao) {
             botao.addEventListener("click", function () {
                 let texto = botao.querySelector("span");
                 texto.textContent++;
             });
+        });
+
+        // Alternância de tema claro/escuro
+        const temaBtn = document.getElementById("temaBtn");
+        temaBtn.addEventListener("click", function () {
+            document.body.classList.toggle("tema-escuro");
         });
     </script>
 </body>
